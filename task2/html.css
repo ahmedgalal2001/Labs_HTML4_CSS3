@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+    border: 2px solid #333;
+    padding: 10px;
+}
+
+.color-range {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input[type='range']{
+    margin: 10px;
+}
+
+#range-red {
+    accent-color: red;
+}
+#range-green {
+    accent-color: green;
+}
+#range-blue {
+    accent-color: blue;
+}

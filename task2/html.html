@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Control</title>
+    <link rel="stylesheet" href="html.css">
+</head>
+
+<body>
+    <!-- main -->
+    <div id="main" class="main">
+        <h1>I'm Color Range I can changed </h1>
+        <!-- color Range -->
+        <div class="container">
+            <div id="color-range" class="color-range">
+                <div>
+                    <input type="range" oninput="change_color_text()" onchange="change_color_text()" min="0" max="255"
+                        name="range_red" id="range-red">
+                    <span>Red</span>
+                </div>
+                <div>
+                    <input type="range" oninput="change_color_text()" onchange="change_color_text()" min="0" max="255"
+                        name="range_green" id="range-green">
+                    <span>Green</span>
+                </div>
+                <div>
+                    <input type="range" oninput="change_color_text()" onchange="change_color_text()" min="0" max="255"
+                        name="range_blue" id="range-blue">
+                    <span>Blue</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+    <script src="html.js"></script>
+</body>
+
+</html>

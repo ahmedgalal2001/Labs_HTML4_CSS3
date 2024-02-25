@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.video {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+Video {
+    width: 500px;
+}
+
+.progress-duration {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#range-time{
+    width: 450px;
+}
+
+.controls {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btns{
+    margin: 10px;
+}
+.btn {
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
