@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Control</title>
+    <link rel="stylesheet" href="html.css">
+</head>
+
+<body>
+    <!-- main -->
+    <div id="main" class="main">
+        <!-- video -->
+        <div class="video">
+            <Video id="show-video" ontimeupdate="on_time_update()" src="30second.mp4">
+            </Video>
+            <div id="progress-duration" class="progress-duration">
+                <input type="range" min="0" name="range_time" id="range-time">
+                <span id="current-time"></span>
+                <span>/</span>
+                <span id="total-duration"></span>
+            </div>
+        </div>
+        <!-- controls -->
+        <div class="controls">
+            <div id="btns" class="btns">
+                <button class="btn" style="background-color: green; color: white;" onclick="play_video()">Play</button>
+
+                <button class="btn" style="background-color: red; color: white;" onclick="pause_video()">Pause</button>
+
+                <button class="btn" style="background-color: green; color: white;"
+                    onclick="play_back_5_video()">&lt&lt</button>
+
+                <button class="btn" style="background-color: green; color: white;"
+                    onclick="play_back_1_video()">&lt</button>
+
+                <button class="btn" style="background-color: green; color: white;"
+                    onclick="play_front_1_video()">&gt</button>
+
+                <button class="btn" style="background-color: green; color: white;"
+                    onclick="play_front_5_video()">&gt&gt</button>
+
+                <input type="range" min="0" step="0.1" value="1" max="1" name="range_volume" id="range-volume">
+
+                <img width="24" height="24" onclick="mute_video(this)" src="volume.png">
+            </div>
+            <div class="speed">
+                <input type="range" min="0.07" step="0.1" value="1" max="16" name="range_speed" id="range-speed">
+                <span>Speed</span>
+            </div>
+        </div>
+        <!-- controls -->
+    </div>
+    <!-- main -->
+    <script src="html.js"></script>
+</body>
+
+</html>
